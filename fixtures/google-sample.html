@@ -1,0 +1,32 @@
+<!-- Synthetic sample resembling a Google Shopping results page, for offline
+     parser tests. Real Google markup is obfuscated and changes; this fixture
+     exercises the defensive parser (price + title + merchant extraction). -->
+<html><body>
+<div class="sh-dgr__grid-result">
+  <div class="card">
+    <a href="/url?q=https://www.magazineluiza.com.br/iphone-15/p/abc123">
+      <h3>Apple iPhone 15 128GB Preto</h3>
+    </a>
+    <span>R$ 4.199,00</span>
+    <span>Magazine Luiza</span>
+  </div>
+</div>
+<div class="sh-dgr__grid-result">
+  <div class="card">
+    <a href="/url?q=https://www.amazon.com.br/dp/XYZ">
+      <h3>iPhone 15 128GB Apple</h3>
+    </a>
+    <span>R$ 3.999,90</span>
+    <span>Amazon.com.br</span>
+  </div>
+</div>
+<div class="sh-dgr__grid-result">
+  <div class="card">
+    <a href="/url?q=https://produto.mercadolivre.com.br/MLB-123">
+      <h3>Apple iPhone 15 (128 GB) Preto</h3>
+    </a>
+    <span>R$ 4.349,00</span>
+    <span>Mercado Livre</span>
+  </div>
+</div>
+</body></html>
